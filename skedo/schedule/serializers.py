@@ -1,6 +1,6 @@
 from rest_framework.serializers import Serializer
 
-from models import Schedule, Group, GroupActivity
+from .models import Schedule, Group, GroupActivity
 
 
 class ScheduleSerializer(Serializer):
