@@ -15,6 +15,8 @@ class ScheduleSerializer(ModelSerializer):
 
 
 class GroupSerializer(ModelSerializer):
+    id = IntegerField(source='pk', read_only=True)
+    
     class Meta:
         model = Group
         fields = "__all__"
